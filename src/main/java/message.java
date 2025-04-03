@@ -27,6 +27,9 @@ public class message {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("user-data-dir=C:\\Users\\hemay\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1");
         options.addArguments("--profile-directory=Profile 1");
+        options.addArguments("--headless");  // Add this for headless mode
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
 
         WebDriver driver = new ChromeDriver(options);
