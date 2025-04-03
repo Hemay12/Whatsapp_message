@@ -97,7 +97,7 @@ public class message {
         Thread.sleep(1000);
 
         // Press Enter to send message
-//        messageBox.sendKeys(Keys.ENTER);
+        messageBox.sendKeys(Keys.ENTER);
         System.out.println("Message sent: " );
 
         // Keep the browser open for verification
